@@ -410,8 +410,51 @@ PS C:\Users\user\Otus\task-1>
 [vagrant@kernel-update ~]$ uname -r
 6.7.1-1.el8.elrepo.x86_64
 ```
+## Загрузка домашнего задания в GitHub
+### На GitHub создал аккунт и cгенерировал токен доступа.
+### Создал публичный репозиторй "task-1".
+### В каталоге C:\Users\user\Otus\task-1 создал файл README.md
+```
+C:\Users\user\Otus\task-1>echo "# Занятие 1. Vagrant-стенд для обновления ядра в ОС Linux" >> README.md
+```
+### Отредактировал README.md - добавил этот текст.
+### Добавил в папку систему контроля версий git:
+```
+C:\Users\user\Otus\task-1>git init
+Initialized empty Git repository in C:/Users/user/Otus/task-1/.git/
+```
+### Добавил файлы README.md и Vagrantfile в систему контроля версий:
+```
+C:\Users\user\Otus\task-1>git add README.md Vagrantfile
+```
+### Зафиксирова изменения:
+```
+C:\Users\user\Otus\task-1>git commit -m «task-1»    
+[master (root-commit) bf504ed] «task-1»
+ 2 files changed, 478 insertions(+)    
+ create mode 100644 README.md
+ create mode 100644 Vagrantfile
+ ```
+### Добавил информацию о репозитории на GitHub:
+```
+C:\Users\user\Otus\task-1>git remote add origin https://github.com/b1932177/task-1.git
+```
+### Отправил файлы в удаленный репозиторий GitHub:
+```
+C:\Users\user\Otus\task-1>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 6.24 KiB | 3.12 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/b1932177/task-1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+```
 
-## Особенносит реализации решения
+
+ ## Особенносит реализации решения
 - Хостовая ОС: Windows 10
 - Vagnant 2.4.0
 - Git 2.39.1.windows.1
