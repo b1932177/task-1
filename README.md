@@ -276,7 +276,7 @@ PS C:\Users\user\Otus\task-1>
 ```
 ### Обновление ядра
 #### Подключение к виртуальной машине:
-```sh
+```
 PS C:\Users\user\Otus\task-1> vagrant ssh
 [vagrant@kernel-update ~]$ 
 ```
@@ -320,7 +320,7 @@ Installed:
 
 Complete!
 ```
-#### Установка последнего ядра зи репозитория:
+#### Установка последнего ядра из репозитория:
 ```
 [vagrant@kernel-update ~]$ sudo yum --enablerepo elrepo-kernel install kernel-ml -y                                                                                   1/1 
 CentOS Stream 8 - AppStream                                                                                                               3.3 kB/s | 4.4 
